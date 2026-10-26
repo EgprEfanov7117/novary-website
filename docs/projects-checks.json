@@ -1,0 +1,864 @@
+{
+  "checks": [
+    {
+      "name": "projects.html 320px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "body": 320,
+        "document": 320
+      }
+    },
+    {
+      "name": "projects.html 320px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 360px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 360,
+        "body": 360,
+        "document": 360
+      }
+    },
+    {
+      "name": "projects.html 360px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 375px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "body": 375,
+        "document": 375
+      }
+    },
+    {
+      "name": "projects.html 375px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 390px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "body": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "projects.html 390px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 480px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 480,
+        "body": 480,
+        "document": 480
+      }
+    },
+    {
+      "name": "projects.html 480px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 600px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 600,
+        "body": 600,
+        "document": 600
+      }
+    },
+    {
+      "name": "projects.html 600px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 768px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "body": 768,
+        "document": 768
+      }
+    },
+    {
+      "name": "projects.html 768px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 900px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 900,
+        "body": 900,
+        "document": 900
+      }
+    },
+    {
+      "name": "projects.html 900px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1024px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024
+      }
+    },
+    {
+      "name": "projects.html 1024px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1199px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1199,
+        "body": 1199,
+        "document": 1199
+      }
+    },
+    {
+      "name": "projects.html 1199px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1200px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1200,
+        "body": 1200,
+        "document": 1200
+      }
+    },
+    {
+      "name": "projects.html 1200px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1440px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "name": "projects.html 1440px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1920px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "body": 1920,
+        "document": 1920
+      }
+    },
+    {
+      "name": "projects.html 1920px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu opened",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu initial focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu focus trap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html local menu CTA closes dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html shared Telegram config",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html external demos safe",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 200% text no overflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "projects.html keyboard skip link",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 320px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "body": 320,
+        "document": 320
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 320px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 360px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 360,
+        "body": 360,
+        "document": 360
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 360px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 375px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "body": 375,
+        "document": 375
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 375px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 390px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "body": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 390px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 480px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 480,
+        "body": 480,
+        "document": 480
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 480px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 600px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 600,
+        "body": 600,
+        "document": 600
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 600px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 768px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "body": 768,
+        "document": 768
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 768px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 900px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 900,
+        "body": 900,
+        "document": 900
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 900px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1024px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1024px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1199px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1199,
+        "body": 1199,
+        "document": 1199
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1199px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1200px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1200,
+        "body": 1200,
+        "document": 1200
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1200px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1440px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1440px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1920px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "body": 1920,
+        "document": 1920
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1920px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu opened",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu initial focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu focus trap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html local menu CTA closes dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html shared Telegram config",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html external demos safe",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 200% text no overflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "projects/barber-cult.html keyboard skip link",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 320px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "body": 320,
+        "document": 320
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 320px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 360px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 360,
+        "body": 360,
+        "document": 360
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 360px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 375px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "body": 375,
+        "document": 375
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 375px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 390px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "body": 390,
+        "document": 390
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 390px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 480px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 480,
+        "body": 480,
+        "document": 480
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 480px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 600px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 600,
+        "body": 600,
+        "document": 600
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 600px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 768px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "body": 768,
+        "document": 768
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 768px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 900px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 900,
+        "body": 900,
+        "document": 900
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 900px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1024px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1024px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1199px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1199,
+        "body": 1199,
+        "document": 1199
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1199px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1200px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1200,
+        "body": 1200,
+        "document": 1200
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1200px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1440px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1440px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1920px no overflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "body": 1920,
+        "document": 1920
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1920px correct menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu opened",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu initial focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu focus trap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html local menu CTA closes dialog",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html shared Telegram config",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html external demos safe",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 200% text no overflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "projects/forma-architects.html keyboard skip link",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Projects -> Barber case",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Barber -> Forma case",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Nested case -> Services",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Services -> Projects",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Projects -> homepage about",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All rendered images loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html no-JS reflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html no-JS reflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html no-JS reflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html short finite animation",
+      "passed": true,
+      "details": {
+        "duration": "0.45s",
+        "iterations": "1"
+      }
+    },
+    {
+      "name": "projects/barber-cult.html short finite animation",
+      "passed": true,
+      "details": {
+        "duration": "0.5s",
+        "iterations": "1"
+      }
+    },
+    {
+      "name": "projects/forma-architects.html short finite animation",
+      "passed": true,
+      "details": {
+        "duration": "0.5s",
+        "iterations": "1"
+      }
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "page": "projects.html",
+      "width": 1440,
+      "height": 3703,
+      "path": "previews/projects-desktop.webp"
+    },
+    {
+      "page": "projects.html",
+      "width": 390,
+      "height": 3009,
+      "path": "previews/projects-mobile.webp"
+    },
+    {
+      "page": "projects/barber-cult.html",
+      "width": 1440,
+      "height": 5913,
+      "path": "previews/projects-barber-cult-desktop.webp"
+    },
+    {
+      "page": "projects/barber-cult.html",
+      "width": 390,
+      "height": 6174,
+      "path": "previews/projects-barber-cult-mobile.webp"
+    },
+    {
+      "page": "projects/forma-architects.html",
+      "width": 1440,
+      "height": 6589,
+      "path": "previews/projects-forma-architects-desktop.webp"
+    },
+    {
+      "page": "projects/forma-architects.html",
+      "width": 390,
+      "height": 6624,
+      "path": "previews/projects-forma-architects-mobile.webp"
+    }
+  ],
+  "summary": {
+    "passed": 126,
+    "failed": 0,
+    "errors": 0
+  },
+  "external_demo_checks": [
+    {
+      "url": "https://egprefanov7117.github.io/barber-cult/",
+      "method": "HEAD",
+      "status": 200
+    },
+    {
+      "url": "https://egprefanov7117.github.io/forma-architects/",
+      "method": "HEAD",
+      "status": 200
+    }
+  ]
+}

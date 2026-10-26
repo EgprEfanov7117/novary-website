@@ -21,6 +21,26 @@
 Фотографии распространяются по [Unsplash License](https://unsplash.com/license).
 Полные сведения сохранены в исходных `CREDITS.md` соответствующих концептов.
 
+## Дополнительные экраны кейсов
+
+В `assets/images/projects/` добавлены 12 WebP общим размером 583 616 байт:
+
+- `barber-cult-about-{640,1200}.webp` и `barber-cult-gallery-{640,1200}.webp` —
+  разделы `#about` и `#gallery` публичного BARBER CULT.
+- `forma-architects-projects-{640,1200}.webp` и `forma-architects-process-{640,1200}.webp` —
+  разделы `#projects` и `#process` публичного FORMA ARCHITECTS.
+- `{barber-cult,forma-architects}-mobile-{390,780}.webp` — мобильные первые экраны
+  при viewport 390 × 844; варианты шириной 780 сохраняют тот же кадр.
+
+Это новые снимки предоставленных выше публичных демосайтов, сделанные
+26 октября 2026 года в Chromium с reduced motion. URL источника встроен в XMP.
+Исходные обложки первого экрана переиспользованы без изменения. Дополнительные
+фотографии внутри снимков принадлежат авторам, перечисленным в оригинальных
+[CREDITS BARBER CULT](../portfolio/barbershop/CREDITS.md) и
+[CREDITS FORMA ARCHITECTS](../portfolio/forma-architects/CREDITS.md);
+их атрибуция и условия Unsplash сохраняются. Они иллюстрируют вымышленные бренды:
+люди не заявлены сотрудниками BARBER CULT, здания не приписываются FORMA/NOVARY.
+
 ## Шрифты
 
 Официальные вариативные Inter и Space Grotesk получены из Google Fonts,
@@ -33,6 +53,14 @@ Space Grotesk не применяется к русскоязычным заго
 
 Обе лицензии — SIL Open Font License 1.1.
 
+Для подписанных типографических образцов кейсов скопированы существующие
+локальные `oswald.woff` из `../portfolio/barbershop/assets/fonts/` и
+`manrope.woff` из `../portfolio/forma-architects/assets/fonts/`:
+`assets/fonts/portfolio-oswald.woff` и `assets/fonts/portfolio-manrope.woff`.
+Лицензии SIL OFL 1.1 сохранены как `Portfolio-OFL-Oswald.txt` и
+`Portfolio-OFL-Manrope.txt` в той же папке. Это образцы гарнитур проектов;
+брендовые Inter и Space Grotesk NOVARY сохранены.
+
 ## Собственные материалы
 
 Схема hero, знак N, favicon, HTML/CSS и композиция Open Graph созданы для NOVARY.
@@ -42,3 +70,9 @@ Space Grotesk не применяется к русскоязычным заго
 
 `previews/desktop.webp` и `previews/mobile.webp` — финальные снимки этой главной
 в Chromium, сохранённые для просмотра результата. Источник встроен в XMP.
+
+Шесть новых снимков страниц портфолио и кейсов —
+`previews/projects-{desktop,mobile}.webp`,
+`previews/projects-barber-cult-{desktop,mobile}.webp` и
+`previews/projects-forma-architects-{desktop,mobile}.webp` — сделаны в Chromium
+при локальном просмотре NOVARY, с источником в XMP. Исходные превью сохранены.
