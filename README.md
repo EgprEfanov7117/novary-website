@@ -15,6 +15,7 @@ python3 -m http.server 8001 --bind 127.0.0.1 --directory /Users/egor/Desktop/NOV
 Откройте **http://127.0.0.1:8001**. Остановка — `Ctrl+C`.
 Страница услуг: **http://127.0.0.1:8001/services.html**.
 Портфолио: **http://127.0.0.1:8001/projects.html**.
+О студии: **http://127.0.0.1:8001/about.html**.
 Установка npm-пакетов не нужна. Открытие `index.html` через `file://` не подходит
 для JavaScript-модулей: используйте HTTP-сервер.
 
@@ -25,11 +26,13 @@ novary-website/
 ├── index.html
 ├── services.html              # Отдельная коммерческая страница услуг
 ├── projects.html              # Список демонстрационных проектов
+├── about.html                 # Философия студии, процесс и роль AI
 ├── projects/                  # barber-cult.html и forma-architects.html
 ├── assets/
 │   ├── css/styles.css
 │   ├── css/services.css        # Только композиция страницы услуг
 │   ├── css/projects.css        # Только портфолио и страницы проектов
+│   ├── css/about.css           # Только композиция страницы студии
 │   ├── js/config.js
 │   ├── js/main.js
 │   ├── fonts/                  # Локальные WOFF и лицензии SIL OFL
@@ -41,10 +44,13 @@ novary-website/
 │   ├── IMPLEMENTATION_NOTES.md # Соответствие реализации и уточнения
 │   ├── SERVICES_PAGE.md        # Страница услуг, запуск и проверка
 │   ├── PROJECTS_SECTION.md     # Портфолио, источники и границы проверки
-│   └── projects-checks.json    # Результаты браузерных проверок портфолио
+│   ├── projects-checks.json    # Результаты браузерных проверок портфолио
+│   ├── ABOUT_PAGE.md           # Страница студии, запуск и границы проверки
+│   └── about-checks.json       # Результаты браузерных проверок страницы студии
 ├── scripts/check_site.py       # Проверки без сторонних зависимостей
 ├── scripts/check_services.py   # Ресурсы, якоря и семантика страницы услуг
 ├── scripts/check_projects.py   # Кейсы, вложенные пути и сохранность старых файлов
+├── scripts/check_about.py      # Студия, маршруты и необязательное сравнение с исходным снимком
 ├── previews/                  # Финальные снимки desktop и mobile
 ├── PRODUCT.md                 # Подтверждённые сведения и границы проекта
 ├── CREDITS.md
@@ -68,10 +74,11 @@ Tab остаётся внутри, Escape закрывает меню, фоку�
 При переходе к разделу фокус переносится к его содержимому. FAQ использует
 нативные `details` / `summary` и работает без JavaScript. Навигация без JavaScript
 остаётся видимой. Услуги открываются на `services.html`, проекты — на
-`projects.html`; «О студии» и «Контакты» в меню ведут к секциям главной.
+`projects.html`; «О студии» — на `about.html`, «Контакты» — к секции главной.
 На внутренних страницах CTA «Обсудить проект» ведёт к их контактному блоку.
-Состав и проверка страниц описаны в [docs/SERVICES_PAGE.md](docs/SERVICES_PAGE.md)
-и [docs/PROJECTS_SECTION.md](docs/PROJECTS_SECTION.md).
+Состав и проверка страниц описаны в [docs/SERVICES_PAGE.md](docs/SERVICES_PAGE.md),
+[docs/PROJECTS_SECTION.md](docs/PROJECTS_SECTION.md)
+и [docs/ABOUT_PAGE.md](docs/ABOUT_PAGE.md).
 
 ## Конфигурация и подготовка к публикации
 
@@ -84,7 +91,7 @@ export const TELEGRAM_BOT_URL = "https://t.me/novary_studio_bot";
 ```
 
 Это единая настройка контактных ссылок главной, hero-концептов, услуг,
-портфолио и обеих страниц проектов.
+портфолио, обеих страниц проектов и страницы студии.
 Ссылки подключаются общим `assets/js/main.js` и открывают бота в новой вкладке.
 Без JavaScript или при некорректной настройке остаётся уведомление о временной
 недоступности канала. **Токен из `.env` Telegram-бота сюда переносить нельзя.**
@@ -109,7 +116,7 @@ export const TELEGRAM_BOT_URL = "https://t.me/novary_studio_bot";
 
 ## Решения по отличиям от исходных документов
 
-Документы сохранены без изменений. Новое задание уточняет их:
+Исходные документы проектирования сохранены без изменений. Позднейшие задания уточняют их:
 
 - Контактная форма заменена переходом в Telegram.
 - К трём направлениям добавлены AI-решения.
@@ -117,7 +124,8 @@ export const TELEGRAM_BOT_URL = "https://t.me/novary_studio_bot";
   раздел проектов и навигация. Обе работы явно отмечены как концепты.
 - Второй hero CTA ведёт к проектам; услуги доступны из меню.
 - Для услуг создана `services.html`, для портфолио — `projects.html` и две
-  вложенные страницы проектов; «О студии» и «Контакты» в меню используют якоря главной.
+  вложенные страницы проектов. Для студии создана `about.html`; «Контакты»
+  в меню сохраняют якорь главной.
 
 ## Проверки
 
@@ -127,6 +135,7 @@ python3 scripts/check_site.py
 python3 scripts/check_hero_concepts.py
 python3 scripts/check_services.py
 python3 scripts/check_projects.py
+python3 scripts/check_about.py
 node --check assets/js/config.js
 node --check assets/js/main.js
 ```
@@ -137,11 +146,14 @@ Node нужен только для необязательной проверк�
 Проверки услуг и их границы: [SERVICES_PAGE.md](docs/SERVICES_PAGE.md).
 Портфолио: [PROJECTS_SECTION.md](docs/PROJECTS_SECTION.md), включая команду
 сравнения с исходным снимком и ссылки на шесть новых превью.
+Студия: [ABOUT_PAGE.md](docs/ABOUT_PAGE.md), [проверки](docs/about-checks.json),
+[desktop](previews/about-desktop.webp) и [mobile](previews/about-mobile.webp).
 
 ## Дальнейшее развитие
 
 Общие токены и компоненты остаются в `assets/css/styles.css`, поведение —
 в `assets/js/main.js`. Страница услуг подключает их и `assets/css/services.css`, портфолио и кейсы —
-`assets/css/projects.css`. Новые страницы могут подключать общие файлы.
-Навигация на услуги и проекты уже использует фактические адреса.
+`assets/css/projects.css`, страница студии — `assets/css/about.css`.
+Новые страницы могут подключать общие файлы.
+Навигация на услуги, проекты и студию использует фактические адреса.
 Дублировать hero и весь состав главной на внутренних страницах не требуется.

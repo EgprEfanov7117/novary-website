@@ -1,0 +1,376 @@
+{
+  "checks": [
+    {
+      "name": "About 320px reflow",
+      "passed": true,
+      "details": {
+        "v": 320,
+        "w": 320
+      }
+    },
+    {
+      "name": "About 320px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 360px reflow",
+      "passed": true,
+      "details": {
+        "v": 360,
+        "w": 360
+      }
+    },
+    {
+      "name": "About 360px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 375px reflow",
+      "passed": true,
+      "details": {
+        "v": 375,
+        "w": 375
+      }
+    },
+    {
+      "name": "About 375px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 390px reflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "About 390px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 480px reflow",
+      "passed": true,
+      "details": {
+        "v": 480,
+        "w": 480
+      }
+    },
+    {
+      "name": "About 480px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 600px reflow",
+      "passed": true,
+      "details": {
+        "v": 600,
+        "w": 600
+      }
+    },
+    {
+      "name": "About 600px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 768px reflow",
+      "passed": true,
+      "details": {
+        "v": 768,
+        "w": 768
+      }
+    },
+    {
+      "name": "About 768px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 900px reflow",
+      "passed": true,
+      "details": {
+        "v": 900,
+        "w": 900
+      }
+    },
+    {
+      "name": "About 900px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1024px reflow",
+      "passed": true,
+      "details": {
+        "v": 1024,
+        "w": 1024
+      }
+    },
+    {
+      "name": "About 1024px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1199px reflow",
+      "passed": true,
+      "details": {
+        "v": 1199,
+        "w": 1199
+      }
+    },
+    {
+      "name": "About 1199px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1200px reflow",
+      "passed": true,
+      "details": {
+        "v": 1200,
+        "w": 1200
+      }
+    },
+    {
+      "name": "About 1200px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1440px reflow",
+      "passed": true,
+      "details": {
+        "v": 1440,
+        "w": 1440
+      }
+    },
+    {
+      "name": "About 1440px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1920px reflow",
+      "passed": true,
+      "details": {
+        "v": 1920,
+        "w": 1920
+      }
+    },
+    {
+      "name": "About 1920px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 390px 200% text",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "200% text slogan retains readable width",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About 1440px 200% text",
+      "passed": true,
+      "details": {
+        "v": 1440,
+        "w": 1440
+      }
+    },
+    {
+      "name": "200% text route becomes vertical",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu close receives focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu traps keyboard focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Escape closes menu and restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu CTA focuses contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Shared Telegram configured",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "CTA opens configured bot URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Three philosophy principles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Five ordered process stages",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Demonstration work status visible",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reduced motion static",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Keyboard first skip link",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Skip link focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hero-a.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hero-b.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html -> About",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About -> Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About -> Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About -> Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About -> Barber case",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "About -> Forma case",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No JS navigation visible",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No JS 320px reflow",
+      "passed": true,
+      "details": {
+        "v": 320,
+        "w": 320
+      }
+    },
+    {
+      "name": "No JS CTA has visible fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Invalid Telegram config preserves fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Finite short geometry animation",
+      "passed": true,
+      "details": {
+        "name": "studio-form",
+        "duration": "0.45s",
+        "count": "1"
+      }
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "page": "about.html",
+      "width": 1440,
+      "height": 4839,
+      "path": "previews/about-desktop.webp"
+    },
+    {
+      "page": "about.html",
+      "width": 390,
+      "height": 6090,
+      "path": "previews/about-mobile.webp"
+    }
+  ],
+  "summary": {
+    "passed": 60,
+    "failed": 0,
+    "errors": 0
+  }
+}

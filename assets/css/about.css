@@ -1,0 +1,111 @@
+/* Страница студии расширяет общие компоненты, цвета и шрифты styles.css. */
+.studio-page :where(.desktop-nav, .menu-panel nav, .footer-main nav) [aria-current="page"] { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: .5em; }
+.studio-hero { display: grid; grid-template-columns: minmax(0, 9fr) minmax(0, 3fr); gap: 2.5rem 3rem; padding-top: 5rem; }
+.studio-hero h1 { max-width: 22ch; font-size: 4rem; line-height: 1.12; letter-spacing: -.03em; }
+.studio-hero h1 > span { display: block; color: var(--text-secondary); }
+.studio-intro { max-width: 45rem; }
+.studio-intro > p + p { margin-top: 1rem; color: var(--text-secondary); font-size: 1rem; }
+.studio-slogan { grid-column: 1 / -1; padding-block: 2rem; border-bottom: 1px solid var(--border-subtle); font: 500 1.5rem/1.3 var(--font-brand); letter-spacing: -.025em; }
+.studio-geometry { grid-column: 2; grid-row: 1 / 3; align-self: end; justify-self: end; width: min(100%, 15rem); }
+.studio-geometry svg { display: block; width: 100%; height: auto; }
+.studio-outline { stroke: var(--border-control); stroke-width: 1; }
+.studio-outline-faint { stroke: var(--border-subtle); stroke-width: 1; }
+.studio-blue-joint { fill: var(--accent); }
+.studio-geometry figcaption { margin-top: 1.5rem; color: var(--text-secondary); font-size: .875rem; }
+.studio-principles { margin: 0; padding: 0; list-style: none; }
+.studio-principles > li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 6fr); gap: 2rem; padding-block: 2.5rem; border-top: 1px solid var(--border-subtle); }
+.studio-principles > li:last-child { border-bottom: 1px solid var(--border-subtle); }
+.studio-principles h3 { max-width: 18rem; font-size: 2rem; line-height: 1.25; letter-spacing: -.025em; }
+.studio-principles p { max-width: 36rem; color: var(--text-secondary); }
+.studio-method { container-type: inline-size; }
+.studio-route { padding: 0; margin: 0; list-style: none; }
+.studio-route > li { position: relative; min-width: 0; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 5fr); gap: 1.5rem; margin-left: 4px; padding: 0 0 2.5rem 2rem; border-left: 1px solid var(--border-control); }
+.studio-route > li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.studio-route > li:last-child::after { content: ""; position: absolute; top: 0; left: -1px; width: 1px; height: .5rem; background: var(--border-control); }
+.route-point { position: absolute; top: .5rem; left: -5px; width: 9px; height: 9px; background: var(--background); border: 1px solid var(--border-control); }
+.studio-route > li:last-child .route-point { background: var(--accent); border-color: var(--accent); }
+.studio-route h3 { font-size: 1.5rem; line-height: 1.4; letter-spacing: -.015em; }
+.studio-route p { color: var(--text-secondary); font-size: 1rem; }
+.studio-ai { padding-block: 5rem; background: var(--surface); }
+.studio-ai-inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 5rem; }
+.studio-ai-intro { max-width: 27rem; }
+.studio-ai-intro > p { margin-top: 2rem; }
+.studio-ai-details > div + div { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); }
+.studio-ai-details h3 { font-size: 1.375rem; line-height: 1.36; }
+.studio-ai-details p { max-width: 41rem; margin-top: .75rem; color: var(--text-secondary); }
+.studio-work-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; align-items: start; }
+.studio-work-list > article { min-width: 0; }
+.studio-work-list > article + article { margin-top: 3rem; }
+.studio-work-list .project-caption { display: block; }
+.studio-work-list .project-caption .studio-demo-label { margin-top: .75rem; font-size: .875rem; }
+.studio-work-list .project-open { margin-top: 1rem; }
+.studio-text-link { display: inline-flex; align-items: center; gap: 1rem; min-height: 2.75rem; max-width: 100%; font-size: 1rem; text-decoration: underline; }
+.studio-all-work { margin-top: 3rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .studio-geometry svg { animation: studio-form 450ms var(--ease-out); }
+}
+@keyframes studio-form { from { opacity: .65; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+@media (hover: hover) {
+  .studio-text-link:hover { color: var(--accent-hover); }
+}
+
+/* В rem-порог входит и увеличение текста: тесная схема остаётся вертикальной. */
+@media (min-width: 1200px) {
+  @container (min-width: 65rem) {
+    .studio-route { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5rem; }
+    .studio-route > li { display: block; margin: 0; padding: 1.5rem 0 0; border: 0; border-top: 1px solid var(--border-control); }
+    .studio-route > li:nth-child(2) { margin-top: 2rem; }
+    .studio-route > li:nth-child(3) { margin-top: 4rem; }
+    .studio-route > li:nth-child(4) { margin-top: 6rem; }
+    .studio-route > li:nth-child(5) { margin-top: 8rem; }
+    .studio-route > li + li::before { content: ""; position: absolute; top: calc(-2rem - 1px); left: -1.5rem; width: 1.5rem; height: 2rem; border-top: 1px solid var(--border-control); border-right: 1px solid var(--border-control); }
+    .studio-route > li:last-child::after { display: none; }
+    .studio-route .route-point { top: -5px; left: 0; }
+    .studio-route h3 { font-size: 1.25rem; }
+    .studio-route p { margin-top: .75rem; }
+  }
+}
+
+@media (max-width: 1199px) {
+  .studio-hero { padding-top: 4rem; gap: 2rem; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); }
+  .studio-hero h1 { font-size: 3rem; }
+  .studio-geometry { width: min(100%, 12rem); }
+  .studio-principles > li { grid-template-columns: 2.5rem minmax(0, 4fr) minmax(0, 5fr); gap: 1.5rem; padding-block: 2rem; }
+  .studio-principles h3 { font-size: 1.75rem; }
+  .studio-ai-inner { gap: 3rem; }
+  .studio-ai { padding-block: 4rem; }
+}
+
+@media (max-width: 767px) {
+  .studio-hero { grid-template-columns: minmax(0, 1fr) min(7rem, 32%); gap: 1.5rem; padding-top: 2.5rem; }
+  .studio-hero h1 { grid-column: 1 / -1; max-width: 20ch; font-size: 2.25rem; line-height: 1.15; letter-spacing: -.02em; }
+  .studio-intro { grid-column: 1 / -1; grid-row: 2; }
+  .studio-geometry { grid-row: 3; width: 100%; max-width: 7rem; }
+  .studio-geometry figcaption { display: none; }
+  .studio-slogan { grid-column: 1; align-self: center; margin: 0; padding: 0; border: 0; font-size: 1.25rem; }
+  .studio-principles > li { grid-template-columns: 2rem minmax(0, 1fr); gap: .75rem 1rem; padding-block: 1.5rem; }
+  .studio-principles h3 { max-width: none; font-size: 1.5rem; line-height: 1.33; letter-spacing: -.015em; }
+  .studio-principles p { grid-column: 2; }
+  .studio-principles .step-number { font-size: 1.25rem; }
+  .studio-route > li:nth-child(n) { display: block; padding-left: 1.5rem; padding-bottom: 2rem; }
+  .studio-route > li:last-child { padding-bottom: 0; }
+  .studio-route h3 { font-size: 1.375rem; }
+  .studio-route p { margin-top: .5rem; }
+  .studio-ai { padding-block: 3rem; }
+  .studio-ai-inner { display: block; }
+  .studio-ai-intro { max-width: none; }
+  .studio-ai-intro > p { margin-top: 1.5rem; }
+  .studio-ai-details { margin-top: 2.5rem; }
+  .studio-ai-details h3 { font-size: 1.25rem; }
+  .studio-ai-details > div + div { margin-top: 1.5rem; padding-top: 1.5rem; }
+  .studio-work-list { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+  .studio-work-list > article + article { margin-top: 0; }
+  .studio-all-work { margin-top: 2rem; }
+}
+
+@media (max-width: 359px) {
+  .studio-hero { gap: 1.25rem; }
+  .studio-slogan { font-size: 1.125rem; }
+}

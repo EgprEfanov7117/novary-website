@@ -76,3 +76,16 @@ Space Grotesk не применяется к русскоязычным заго
 `previews/projects-barber-cult-{desktop,mobile}.webp` и
 `previews/projects-forma-architects-{desktop,mobile}.webp` — сделаны в Chromium
 при локальном просмотре NOVARY, с источником в XMP. Исходные превью сохранены.
+
+
+## Страница студии
+
+`about.html` переиспользует существующие обложки BARBER CULT и FORMA ARCHITECTS
+из `assets/images/`, локальные Inter и Space Grotesk и их указанные выше лицензии.
+Новых фотографий и шрифтов для страницы не добавлено. Компактная SVG-композиция
+из трёх модульных квадратов и геометрия маршрута созданы для NOVARY в HTML/CSS.
+
+`previews/about-desktop.webp` (1440 × 4839) и `previews/about-mobile.webp`
+(390 × 6090) — полные снимки локальной `about.html`, сделанные 27 октября 2026 года
+в Chromium. Локальный URL источника и дата встроены в XMP. Это снимки
+реализованной страницы; исходные превью главной и портфолио сохранены.
