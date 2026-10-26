@@ -1,0 +1,72 @@
+[
+  {
+    "capture": "about-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "about-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "contact-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "contact-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "index-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "index-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-barber-cult-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-barber-cult-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-forma-architects-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-forma-architects-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "projects-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "services-desktop.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  },
+  {
+    "capture": "services-mobile.png",
+    "same_dimensions": true,
+    "pixel_identical": true
+  }
+]

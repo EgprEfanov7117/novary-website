@@ -1,0 +1,262 @@
+{
+  "conditions": {
+    "engine": "Chromium",
+    "viewport": "390x844",
+    "device_scale_factor": 1,
+    "latency_ms": 150,
+    "download_bytes_per_second": 200000,
+    "upload_bytes_per_second": 93750,
+    "cpu_slowdown": 4,
+    "cache": "disabled",
+    "runs": 3,
+    "scope": "localhost, cold initial viewport; not field data or Lighthouse scores",
+    "browser_version": "149.0.7827.55"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "runs": [
+        {
+          "lcp_ms": 804,
+          "cls": 0.0002871668634910981,
+          "dom_content_loaded_ms": 680.4000000953674,
+          "load_ms": 1793.6999998092651,
+          "initial_resource_requests": 7,
+          "transferred_bytes": 306057,
+          "decoded_body_bytes": 303657
+        },
+        {
+          "lcp_ms": 716,
+          "cls": 0.0002871668634910981,
+          "dom_content_loaded_ms": 613.7999997138977,
+          "load_ms": 1759.5,
+          "initial_resource_requests": 7,
+          "transferred_bytes": 306057,
+          "decoded_body_bytes": 303657
+        },
+        {
+          "lcp_ms": 720,
+          "cls": 0.0002871668634910981,
+          "dom_content_loaded_ms": 609,
+          "load_ms": 1761,
+          "initial_resource_requests": 7,
+          "transferred_bytes": 306057,
+          "decoded_body_bytes": 303657
+        }
+      ],
+      "median_lcp_ms": 720,
+      "max_initial_cls": 0.000287,
+      "median_transferred_bytes": 306057
+    },
+    {
+      "page": "services.html",
+      "runs": [
+        {
+          "lcp_ms": 764,
+          "cls": 6.794546393836616e-05,
+          "dom_content_loaded_ms": 646.0999999046326,
+          "load_ms": 1586.0999999046326,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 268626,
+          "decoded_body_bytes": 266526
+        },
+        {
+          "lcp_ms": 760,
+          "cls": 6.794546393836616e-05,
+          "dom_content_loaded_ms": 648.2000002861023,
+          "load_ms": 1586.8000001907349,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 268626,
+          "decoded_body_bytes": 266526
+        },
+        {
+          "lcp_ms": 756,
+          "cls": 6.794546393836616e-05,
+          "dom_content_loaded_ms": 644.3000001907349,
+          "load_ms": 1587,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 268626,
+          "decoded_body_bytes": 266526
+        }
+      ],
+      "median_lcp_ms": 760,
+      "max_initial_cls": 6.8e-05,
+      "median_transferred_bytes": 268626
+    },
+    {
+      "page": "projects.html",
+      "runs": [
+        {
+          "lcp_ms": 872,
+          "cls": 1.2683081277115553e-05,
+          "dom_content_loaded_ms": 766.2999997138977,
+          "load_ms": 1819.3999996185303,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 303250,
+          "decoded_body_bytes": 300550
+        },
+        {
+          "lcp_ms": 884,
+          "cls": 1.2683081277115553e-05,
+          "dom_content_loaded_ms": 779.5,
+          "load_ms": 1818.4000000953674,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 303250,
+          "decoded_body_bytes": 300550
+        },
+        {
+          "lcp_ms": 868,
+          "cls": 1.2683081277115553e-05,
+          "dom_content_loaded_ms": 767,
+          "load_ms": 1817.7000002861023,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 303250,
+          "decoded_body_bytes": 300550
+        }
+      ],
+      "median_lcp_ms": 872,
+      "max_initial_cls": 1.3e-05,
+      "median_transferred_bytes": 303250
+    },
+    {
+      "page": "about.html",
+      "runs": [
+        {
+          "lcp_ms": 748,
+          "cls": 0.0007117643704872204,
+          "dom_content_loaded_ms": 654.6999998092651,
+          "load_ms": 1601.5999999046326,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 265028,
+          "decoded_body_bytes": 262928
+        },
+        {
+          "lcp_ms": 756,
+          "cls": 0.0007117643704872204,
+          "dom_content_loaded_ms": 662.2000002861023,
+          "load_ms": 1602.4000000953674,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 265028,
+          "decoded_body_bytes": 262928
+        },
+        {
+          "lcp_ms": 744,
+          "cls": 0.0007117643704872204,
+          "dom_content_loaded_ms": 653,
+          "load_ms": 1602.1999998092651,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 265028,
+          "decoded_body_bytes": 262928
+        }
+      ],
+      "median_lcp_ms": 748,
+      "max_initial_cls": 0.000712,
+      "median_transferred_bytes": 265028
+    },
+    {
+      "page": "contact.html",
+      "runs": [
+        {
+          "lcp_ms": 748,
+          "cls": 0,
+          "dom_content_loaded_ms": 639.5,
+          "load_ms": 1585.9000000953674,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 258454,
+          "decoded_body_bytes": 256354
+        },
+        {
+          "lcp_ms": 744,
+          "cls": 0,
+          "dom_content_loaded_ms": 641.4000000953674,
+          "load_ms": 1586.3000001907349,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 258454,
+          "decoded_body_bytes": 256354
+        },
+        {
+          "lcp_ms": 744,
+          "cls": 0,
+          "dom_content_loaded_ms": 641.2000002861023,
+          "load_ms": 1587.2000002861023,
+          "initial_resource_requests": 6,
+          "transferred_bytes": 258454,
+          "decoded_body_bytes": 256354
+        }
+      ],
+      "median_lcp_ms": 744,
+      "max_initial_cls": 0,
+      "median_transferred_bytes": 258454
+    },
+    {
+      "page": "projects/barber-cult.html",
+      "runs": [
+        {
+          "lcp_ms": 860,
+          "cls": 0.000220430179808549,
+          "dom_content_loaded_ms": 768.7000002861023,
+          "load_ms": 2299.4000000953674,
+          "initial_resource_requests": 9,
+          "transferred_bytes": 402392,
+          "decoded_body_bytes": 399392
+        },
+        {
+          "lcp_ms": 860,
+          "cls": 0.000220430179808549,
+          "dom_content_loaded_ms": 767.5999999046326,
+          "load_ms": 2297,
+          "initial_resource_requests": 9,
+          "transferred_bytes": 402392,
+          "decoded_body_bytes": 399392
+        },
+        {
+          "lcp_ms": 888,
+          "cls": 0.000220430179808549,
+          "dom_content_loaded_ms": 795.6999998092651,
+          "load_ms": 2307.5999999046326,
+          "initial_resource_requests": 9,
+          "transferred_bytes": 402392,
+          "decoded_body_bytes": 399392
+        }
+      ],
+      "median_lcp_ms": 860,
+      "max_initial_cls": 0.00022,
+      "median_transferred_bytes": 402392
+    },
+    {
+      "page": "projects/forma-architects.html",
+      "runs": [
+        {
+          "lcp_ms": 860,
+          "cls": 0.03451904035203208,
+          "dom_content_loaded_ms": 767.9000000953674,
+          "load_ms": 2059.800000190735,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 356291,
+          "decoded_body_bytes": 353591
+        },
+        {
+          "lcp_ms": 860,
+          "cls": 0.03451904035203208,
+          "dom_content_loaded_ms": 766.3000001907349,
+          "load_ms": 2058,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 356291,
+          "decoded_body_bytes": 353591
+        },
+        {
+          "lcp_ms": 852,
+          "cls": 0.03451904035203208,
+          "dom_content_loaded_ms": 759.5,
+          "load_ms": 2049.9000000953674,
+          "initial_resource_requests": 8,
+          "transferred_bytes": 356291,
+          "decoded_body_bytes": 353591
+        }
+      ],
+      "median_lcp_ms": 860,
+      "max_initial_cls": 0.034519,
+      "median_transferred_bytes": 356291
+    }
+  ]
+}

@@ -65,6 +65,7 @@
 .barber-specimen blockquote { font-family: "Portfolio Oswald", sans-serif; font-weight: 600; color: #c4a77d; }
 .forma-specimen { color: #171717; background: #f5f3ef; }
 .forma-specimen blockquote { font-family: "Portfolio Manrope", sans-serif; font-weight: 400; letter-spacing: -.03em; }
+.case-palette { container-type: inline-size; }
 .case-palette h3 { font-size: 1.375rem; }
 .color-studies { padding: 0; margin: 1rem 0 2rem; list-style: none; font-size: 1rem; }
 .color-studies li { display: grid; grid-template-columns: 2rem 1fr auto; gap: 1rem; align-items: center; min-height: 3.5rem; border-bottom: 1px solid var(--border-subtle); }
@@ -75,7 +76,7 @@
 .case-features > div { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--border-subtle); }
 .case-features > div:last-child { border-bottom: 1px solid var(--border-subtle); }
 .case-features dt { font-size: 1.375rem; font-weight: 500; }
-.case-features dd { margin: 0; max-width: 43rem; color: var(--text-secondary); }
+.case-features dd { margin: 0; max-width: 43rem; color: var(--text-secondary); overflow-wrap: anywhere; }
 .case-demo { margin-top: var(--section-space); }
 .case-demo-heading { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem; margin-bottom: 3rem; }
 .case-demo-heading > div { max-width: 43rem; }
@@ -162,6 +163,13 @@
 }
 
 @media (max-width: 479px) {
+  .color-studies li { grid-template-columns: 2rem minmax(0, 1fr); row-gap: 0; padding-block: .75rem; }
+  .color-sample { grid-row: span 2; }
+  .color-value { grid-column: 2; }
+}
+
+/* Увеличенный текст может сделать узкой и колонку на планшете. */
+@container (max-width: 15rem) {
   .color-studies li { grid-template-columns: 2rem minmax(0, 1fr); row-gap: 0; padding-block: .75rem; }
   .color-sample { grid-row: span 2; }
   .color-value { grid-column: 2; }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Только шаблон. build.py создаёт sitemap.xml после указания настоящего --site-url. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{SITE_URL}}/</loc></url>
+  <url><loc>{{SITE_URL}}/services.html</loc></url>
+  <url><loc>{{SITE_URL}}/projects.html</loc></url>
+  <url><loc>{{SITE_URL}}/about.html</loc></url>
+  <url><loc>{{SITE_URL}}/contact.html</loc></url>
+  <url><loc>{{SITE_URL}}/projects/barber-cult.html</loc></url>
+  <url><loc>{{SITE_URL}}/projects/forma-architects.html</loc></url>
+</urlset>

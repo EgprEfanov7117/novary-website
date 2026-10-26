@@ -1,0 +1,50 @@
+[
+  {
+    "path": ".git/config",
+    "status": 404
+  },
+  {
+    "path": ".env",
+    "status": 404
+  },
+  {
+    "path": ".venv/pyvenv.cfg",
+    "status": 404
+  },
+  {
+    "path": "tests/test_build.py",
+    "status": 404
+  },
+  {
+    "path": "scripts/build.py",
+    "status": 404
+  },
+  {
+    "path": "docs/LAUNCH_CHECKLIST.md",
+    "status": 404
+  },
+  {
+    "path": "previews/contact-desktop.webp",
+    "status": 404
+  },
+  {
+    "path": "hero-a.html",
+    "status": 404
+  },
+  {
+    "path": "hero-b.html",
+    "status": 404
+  },
+  {
+    "path": "node_modules/private.js",
+    "status": 404
+  },
+  {
+    "path": "QA_REPORT.md",
+    "status": 404
+  },
+  {
+    "path": "PRODUCT.md",
+    "status": 404
+  }
+]

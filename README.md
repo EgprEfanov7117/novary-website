@@ -29,6 +29,8 @@ novary-website/
 ├── projects.html              # Список демонстрационных проектов
 ├── about.html                 # Философия студии, процесс и роль AI
 ├── contact.html               # Начало обсуждения проекта в Telegram
+├── robots.txt                 # Правила без вымышленного домена
+├── dist/                      # Публичная сборка, исключена из Git
 ├── projects/                  # barber-cult.html и forma-architects.html
 ├── assets/
 │   ├── css/styles.css
@@ -57,6 +59,10 @@ novary-website/
 ├── scripts/check_projects.py   # Кейсы, вложенные пути и сохранность старых файлов
 ├── scripts/check_about.py      # Студия, маршруты и необязательное сравнение с исходным снимком
 ├── scripts/check_contact.py    # Контакты, маршруты и необязательное сравнение с исходным снимком
+├── scripts/build.py            # Allowlist, зависимости, SEO и проверка сборки
+├── scripts/test_build.py       # Изолированные тесты production-сборки
+├── scripts/audit_browser.py    # Регрессия Chromium, dev-инструмент
+├── scripts/measure_performance.py # Локальные измерения LCP/CLS
 ├── previews/                  # Финальные снимки desktop и mobile
 ├── PRODUCT.md                 # Подтверждённые сведения и границы проекта
 ├── CREDITS.md
@@ -106,17 +112,39 @@ export const TELEGRAM_BOT_URL = "https://t.me/novary_studio_bot";
 При локальной проверке внешний Telegram не открывался, бот не запускался
 и сообщения не отправлялись.
 
-### Домен перед будущей публикацией
+### Production-сборка и домен
 
-Когда будет выбран настоящий домен:
+Для публикации используйте **только `dist/`**. Корень проекта содержит документы
+и служебные файлы. Сборка требует Python 3.10+ и стандартную библиотеку;
+npm и сборщик JavaScript не нужны. Из корня `novary-website`:
 
-- Добавьте в `<head>` `canonical` и `og:url` с окончательным адресом главной.
-- Замените относительный `og:image` на абсолютный HTTPS-адрес
-  `/assets/images/social-preview.png` на этом домене.
-- При необходимости добавьте `twitter:image` с тем же адресом.
+```bash
+python3 scripts/build.py
+python3 scripts/build.py --check
+python3 -m http.server 8002 --bind 127.0.0.1 --directory dist
+```
 
-Сейчас домен намеренно не выдуман. Open Graph title, description, locale и
-локальное изображение 1200 × 630 уже подготовлены.
+Откройте **http://127.0.0.1:8002/**. Скрипт очищает старую сборку после проверки
+входных зависимостей и копирует семь страниц и используемые ресурсы, включая
+лицензии шрифтов. Внутренние каталоги и прототипы исключены. Ошибки ресурсов,
+якорей, метаданных, потенциальные секреты и небезопасные зависимости останавливают
+сборку. При наличии Node синтаксис JavaScript проверяется в явном ESM-режиме.
+
+Домен **пока не определён**. Без него в сборке нет `sitemap.xml`, `canonical`
+и `og:url`; Open Graph использует существующее относительное изображение.
+Шаблон [docs/sitemap.xml.template](docs/sitemap.xml.template) остаётся вне `dist/`.
+После выбора настоящего HTTPS-адреса задайте его локально в переменной
+`NOVARY_SITE_URL` и выполните:
+
+```bash
+python3 scripts/build.py --site-url "$NOVARY_SITE_URL"
+python3 scripts/build.py --check --site-url "$NOVARY_SITE_URL"
+```
+
+Сборщик создаст sitemap, директиву Sitemap в robots, canonical, og:url,
+абсолютные og:image и twitter:image. Поддерживается базовый путь сайта.
+Фиктивный адрес не подставляется. Настройки HTTPS, заголовков и кэша выполняются
+на выбранном хостинге. Отчёт — [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md).
 
 Также перед публикацией подтвердите фактический состав услуг, процесс согласования
 и условия передачи проекта. Цены, сроки, отзывы и юридические сведения не придуманы.
@@ -145,12 +173,15 @@ python3 scripts/check_services.py
 python3 scripts/check_projects.py
 python3 scripts/check_about.py
 python3 scripts/check_contact.py
-node --check assets/js/config.js
-node --check assets/js/main.js
+python3 scripts/test_build.py
+python3 scripts/build.py --check
+node --input-type=module --check < assets/js/config.js
+node --input-type=module --check < assets/js/main.js
 ```
 
 Node нужен только для необязательной проверки синтаксиса, а не для работы сайта.
-Результаты браузерных проверок и их ограничения перечислены в `QA_REPORT.md`.
+Текущий production-аудит — [LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md).
+`QA_REPORT.md` сохраняет историческую проверку ранней главной страницы.
 Полные снимки: [desktop](previews/desktop.webp), [mobile](previews/mobile.webp).
 Проверки услуг и их границы: [SERVICES_PAGE.md](docs/SERVICES_PAGE.md).
 Портфолио: [PROJECTS_SECTION.md](docs/PROJECTS_SECTION.md), включая команду
@@ -159,6 +190,16 @@ Node нужен только для необязательной проверк�
 [desktop](previews/about-desktop.webp) и [mobile](previews/about-mobile.webp).
 Контакты: [CONTACT_PAGE.md](docs/CONTACT_PAGE.md), [проверки](docs/contact-checks.json),
 [desktop](previews/contact-desktop.webp) и [mobile](previews/contact-mobile.webp).
+
+Для повторного браузерного аудита нужен доступный Playwright с Chromium
+(это dev-инструмент, он не попадает в `dist/`). При работающем сервере `dist/`:
+
+```bash
+python3 scripts/audit_browser.py --base-url http://127.0.0.1:8002/ --report docs/production-browser-checks.json --captures previews/launch-png
+python3 scripts/measure_performance.py --report docs/production-performance.json
+```
+
+Замеры локальные, с эмуляцией сети и CPU; это не Lighthouse и не полевые данные.
 
 ## Дальнейшее развитие
 

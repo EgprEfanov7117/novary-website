@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-27",
+  "source_summary": {
+    "passed": 332,
+    "failed": 4,
+    "errors": 0
+  },
+  "source_failures": [
+    {
+      "name": "projects/barber-cult.html 320px 200% text",
+      "passed": false,
+      "details": {
+        "viewport": 320,
+        "width": 327
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 768px 200% text",
+      "passed": false,
+      "details": {
+        "viewport": 768,
+        "width": 835
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 320px 200% text",
+      "passed": false,
+      "details": {
+        "viewport": 320,
+        "width": 339
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 768px 200% text",
+      "passed": false,
+      "details": {
+        "viewport": 768,
+        "width": 833
+      }
+    }
+  ],
+  "dist_summary": {
+    "passed": 336,
+    "failed": 0,
+    "errors": 0
+  },
+  "build": {
+    "pages": 7,
+    "files": 43,
+    "bytes": 1351113
+  },
+  "assets": {
+    "images": 19,
+    "webp_images": 18,
+    "largest_image_bytes": 106866,
+    "woff_fonts": 4
+  },
+  "external_head_checks": [
+    {
+      "url": "https://t.me/novary_studio_bot",
+      "status": 200
+    },
+    {
+      "url": "https://egprefanov7117.github.io/barber-cult/",
+      "status": 200
+    },
+    {
+      "url": "https://egprefanov7117.github.io/forma-architects/",
+      "status": 200
+    }
+  ],
+  "excluded_http_checks": [
+    {
+      "path": ".git/config",
+      "status": 404
+    },
+    {
+      "path": ".env",
+      "status": 404
+    },
+    {
+      "path": ".venv/pyvenv.cfg",
+      "status": 404
+    },
+    {
+      "path": "tests/test_build.py",
+      "status": 404
+    },
+    {
+      "path": "scripts/build.py",
+      "status": 404
+    },
+    {
+      "path": "docs/LAUNCH_CHECKLIST.md",
+      "status": 404
+    },
+    {
+      "path": "previews/contact-desktop.webp",
+      "status": 404
+    },
+    {
+      "path": "hero-a.html",
+      "status": 404
+    },
+    {
+      "path": "hero-b.html",
+      "status": 404
+    },
+    {
+      "path": "node_modules/private.js",
+      "status": 404
+    },
+    {
+      "path": "QA_REPORT.md",
+      "status": 404
+    },
+    {
+      "path": "PRODUCT.md",
+      "status": 404
+    }
+  ],
+  "visual_comparison": [
+    {
+      "capture": "about-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "about-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "contact-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "contact-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "index-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "index-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-barber-cult-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-barber-cult-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-forma-architects-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-forma-architects-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "projects-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "services-desktop.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    },
+    {
+      "capture": "services-mobile.png",
+      "same_dimensions": true,
+      "pixel_identical": true
+    }
+  ],
+  "limitations": [
+    "Domain and hosting unknown",
+    "Chromium, not cross-browser or screen-reader certification",
+    "Lighthouse and Impeccable engine unavailable",
+    "Local initial-load performance, not field INP or deployed-header audit"
+  ]
+}

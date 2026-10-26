@@ -1,0 +1,2047 @@
+{
+  "base_url": "http://127.0.0.1:8002/",
+  "checks": [
+    {
+      "name": "index.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "index.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "index.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "index.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "index.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "index.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "index.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "index.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "index.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "index.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "index.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "index.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "index.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "index.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "index.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "index.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "index.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "index.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "services.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "services.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "services.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "services.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "services.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "services.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "services.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "services.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "services.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "services.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "services.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "services.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "services.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "services.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "services.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "services.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "services.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "projects.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "projects.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "projects.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "about.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "about.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "about.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "about.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "about.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "about.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "about.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "about.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "about.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "about.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "about.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "about.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "about.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "about.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "about.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "about.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "about.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "contact.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "contact.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "contact.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "contact.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "contact.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "contact.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "contact.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "contact.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "contact.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "contact.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "contact.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "contact.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "contact.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "contact.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "contact.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ pointer toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ Space toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "contact.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "contact.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/barber-cult.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/barber-cult.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/barber-cult.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects/barber-cult.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/barber-cult.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/barber-cult.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/barber-cult.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 320px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 320px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 375px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 375,
+        "width": 375
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 375px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 390px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 390px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 768px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 768px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1024px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1024px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1440px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1440px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 1920px reflow",
+      "passed": true,
+      "details": {
+        "viewport": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1920px menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html 320px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 320px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/forma-architects.html 390px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 390px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/forma-architects.html 768px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 768px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/forma-architects.html 1440px 200% text",
+      "passed": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "projects/forma-architects.html 1440px 200% text stays in container",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/forma-architects.html skip hidden initially",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html first Tab shows skip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu opens and focuses close",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu focus containment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html menu CTA closes and focuses section",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html shared Telegram URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html Telegram CTA popup",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html all FAQ expanded",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "projects/forma-architects.html computed text contrast",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "projects/forma-architects.html mobile nav Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html mobile nav Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html mobile nav О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html mobile nav Контакты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html reduced motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "services.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "about.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "contact.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/barber-cult.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "projects/forma-architects.html no-JS navigation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html no-JS reflow",
+      "passed": true,
+      "details": {
+        "viewport": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "index.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html touch closes menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html touch opens menu",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html touch closes menu",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": [],
+  "captures": [
+    "previews/launch/about-desktop.webp",
+    "previews/launch/about-mobile.webp",
+    "previews/launch/contact-desktop.webp",
+    "previews/launch/contact-mobile.webp",
+    "previews/launch/index-desktop.webp",
+    "previews/launch/index-mobile.webp",
+    "previews/launch/projects-barber-cult-desktop.webp",
+    "previews/launch/projects-barber-cult-mobile.webp",
+    "previews/launch/projects-desktop.webp",
+    "previews/launch/projects-forma-architects-desktop.webp",
+    "previews/launch/projects-forma-architects-mobile.webp",
+    "previews/launch/projects-mobile.webp",
+    "previews/launch/services-desktop.webp",
+    "previews/launch/services-mobile.webp"
+  ],
+  "text_contrast": [
+    {
+      "page": "index.html",
+      "failures": []
+    },
+    {
+      "page": "services.html",
+      "failures": []
+    },
+    {
+      "page": "projects.html",
+      "failures": []
+    },
+    {
+      "page": "about.html",
+      "failures": []
+    },
+    {
+      "page": "contact.html",
+      "failures": []
+    },
+    {
+      "page": "projects/barber-cult.html",
+      "failures": []
+    },
+    {
+      "page": "projects/forma-architects.html",
+      "failures": []
+    }
+  ],
+  "targets": [
+    {
+      "page": "index.html",
+      "under_44px": []
+    },
+    {
+      "page": "services.html",
+      "under_44px": []
+    },
+    {
+      "page": "projects.html",
+      "under_44px": []
+    },
+    {
+      "page": "about.html",
+      "under_44px": []
+    },
+    {
+      "page": "contact.html",
+      "under_44px": []
+    },
+    {
+      "page": "projects/barber-cult.html",
+      "under_44px": []
+    },
+    {
+      "page": "projects/forma-architects.html",
+      "under_44px": []
+    }
+  ],
+  "summary": {
+    "passed": 336,
+    "failed": 0,
+    "errors": 0
+  },
+  "capture_note": "Visual pixel comparison used original PNG screenshots before WebP export. Exported previews are for review, outside dist.",
+  "zoom_captures": [
+    "previews/launch/barber-cult-320-text200.webp",
+    "previews/launch/barber-cult-768-text200.webp",
+    "previews/launch/forma-architects-320-text200.webp",
+    "previews/launch/forma-architects-768-text200.webp"
+  ]
+}
