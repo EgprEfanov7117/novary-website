@@ -1,0 +1,75 @@
+/* Comparison-only layouts; the Digital Architecture component lives in styles.css. */
+.concept-page .concept-hero { padding-block: 5rem 4rem; }
+.concept-page :where(.editorial-bottom, .architecture-layout) > * { min-width: 0; }
+
+/* A: typography acts as the composition; the empty right-hand field is intentional. */
+.editorial-headline {
+  font-size: 6rem;
+  line-height: 1.06;
+  letter-spacing: -.035em;
+  text-wrap: initial;
+}
+.editorial-line { display: block; }
+.editorial-line:last-child { margin-left: 15%; }
+.editorial-bottom { display: grid; grid-template-columns: 3fr 5fr 4fr; gap: 2rem; align-items: end; margin-top: 4.5rem; }
+.editorial-bottom .concept-slogan { grid-column: 1; grid-row: 1; }
+.editorial-description { grid-column: 2; grid-row: 1; max-width: 29rem; color: var(--text-secondary); }
+.concept-page .editorial-actions { grid-column: 3; grid-row: 1; display: flex; flex-direction: column; align-items: stretch; gap: .75rem; margin: 0 0 0 auto; width: min(100%, 15rem); }
+
+/* A shared comparison control and a small glimpse of the actual next section. */
+.concept-comparison { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem 2rem; padding-block: 1rem; border-top: 1px solid var(--border-subtle); font-size: .875rem; }
+.concept-comparison-links { display: flex; flex-wrap: wrap; gap: .5rem 2rem; }
+.concept-comparison a { display: inline-flex; align-items: center; min-height: 2.75rem; text-decoration: underline; }
+.concept-comparison a[aria-current="page"] { color: var(--accent); text-decoration-thickness: 2px; }
+.concept-original { color: var(--text-secondary); }
+.concept-next { margin-top: 5rem; padding-bottom: 3rem; }
+.concept-next .section-heading { margin-bottom: 2.5rem; }
+.concept-project-glimpse { display: block; border: 1px solid var(--border-subtle); border-radius: .75rem; overflow: hidden; }
+.concept-project-glimpse img { width: 100%; height: clamp(12rem, 23vw, 20rem); object-fit: cover; object-position: center 30%; }
+.concept-project-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; margin-top: 1rem; font-size: .875rem; color: var(--text-secondary); }
+.concept-project-meta a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--text-primary); text-decoration: underline; }
+
+@media (hover: hover) {
+  .concept-comparison a:hover, .concept-project-meta a:hover { color: var(--accent-hover); }
+  .concept-project-glimpse:hover { border-color: var(--border-control); }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .editorial-headline { font-size: 5.5rem; }
+  .editorial-bottom { grid-template-columns: 3fr 5fr 4fr; gap: 1.5rem; }
+}
+
+@media (max-width: 1199px) {
+  .concept-page .concept-hero { padding-block: 4rem 3rem; }
+  .editorial-headline { font-size: 4.5rem; }
+  .editorial-line:last-child { margin-left: 8%; }
+  .editorial-bottom { grid-template-columns: 1fr 2fr; gap: 2rem; margin-top: 3rem; align-items: start; }
+  .concept-page .editorial-actions { grid-column: 2; grid-row: 2; flex-direction: row; flex-wrap: wrap; width: auto; margin: 0; }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .editorial-headline { font-size: 4rem; }
+  .editorial-line:last-child { margin-left: 0; }
+}
+
+@media (max-width: 767px) {
+  .concept-page .concept-hero { padding-block: 3rem 2rem; }
+  .editorial-headline { font-size: 3rem; line-height: 1.09; letter-spacing: -.025em; }
+  .editorial-line:last-child { margin-left: 0; }
+  .editorial-bottom { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+  .concept-page .editorial-actions { flex-direction: column; width: 100%; }
+  .concept-slogan br { display: none; }
+  .concept-comparison { align-items: flex-start; gap: 0; }
+  .concept-comparison-links { width: 100%; gap: .5rem 1.5rem; }
+  .concept-comparison-links a { flex: 1 1 8.5rem; }
+  .concept-next { margin-top: 3rem; padding-bottom: 2rem; }
+  .concept-next .section-heading { margin-bottom: 2rem; }
+  .concept-project-glimpse img { height: 12rem; object-position: 55% 15%; }
+  .concept-project-meta { display: block; }
+  .concept-project-meta a { margin-top: .5rem; }
+}
+
+@media (max-width: 359px) {
+  .editorial-headline { font-size: 2.5rem; }
+}
+
