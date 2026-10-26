@@ -1,2 +1,2 @@
-// Замените placeholder на публичный URL вашего бота. Токен сюда добавлять нельзя.
-export const TELEGRAM_BOT_URL = "https://t.me/REPLACE_WITH_NOVARY_BOT";
+// Публичный адрес бота для контактных ссылок всех страниц NOVARY.
+export const TELEGRAM_BOT_URL = "https://t.me/novary_studio_bot";
