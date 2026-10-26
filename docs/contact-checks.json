@@ -1,0 +1,499 @@
+{
+  "checks": [
+    {
+      "name": "Contact 320px reflow",
+      "passed": true,
+      "details": {
+        "v": 320,
+        "w": 320
+      }
+    },
+    {
+      "name": "Contact 320px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 320px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 360px reflow",
+      "passed": true,
+      "details": {
+        "v": 360,
+        "w": 360
+      }
+    },
+    {
+      "name": "Contact 360px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 360px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 375px reflow",
+      "passed": true,
+      "details": {
+        "v": 375,
+        "w": 375
+      }
+    },
+    {
+      "name": "Contact 375px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 375px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 390px reflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "Contact 390px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 390px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 480px reflow",
+      "passed": true,
+      "details": {
+        "v": 480,
+        "w": 480
+      }
+    },
+    {
+      "name": "Contact 480px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 480px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 600px reflow",
+      "passed": true,
+      "details": {
+        "v": 600,
+        "w": 600
+      }
+    },
+    {
+      "name": "Contact 600px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 600px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 768px reflow",
+      "passed": true,
+      "details": {
+        "v": 768,
+        "w": 768
+      }
+    },
+    {
+      "name": "Contact 768px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 768px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 900px reflow",
+      "passed": true,
+      "details": {
+        "v": 900,
+        "w": 900
+      }
+    },
+    {
+      "name": "Contact 900px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 900px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1024px reflow",
+      "passed": true,
+      "details": {
+        "v": 1024,
+        "w": 1024
+      }
+    },
+    {
+      "name": "Contact 1024px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1024px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1199px reflow",
+      "passed": true,
+      "details": {
+        "v": 1199,
+        "w": 1199
+      }
+    },
+    {
+      "name": "Contact 1199px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1199px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1200px reflow",
+      "passed": true,
+      "details": {
+        "v": 1200,
+        "w": 1200
+      }
+    },
+    {
+      "name": "Contact 1200px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1200px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1440px reflow",
+      "passed": true,
+      "details": {
+        "v": 1440,
+        "w": 1440
+      }
+    },
+    {
+      "name": "Contact 1440px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1440px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1920px reflow",
+      "passed": true,
+      "details": {
+        "v": 1920,
+        "w": 1920
+      }
+    },
+    {
+      "name": "Contact 1920px menu state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 1920px primary CTA in first viewport",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact 390px 200% text",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "Contact 1440px 200% text",
+      "passed": true,
+      "details": {
+        "v": 1440,
+        "w": 1440
+      }
+    },
+    {
+      "name": "Menu opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu close receives focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu traps focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu Escape restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Menu CTA focuses invitation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All Telegram links share config",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": ".contact-start-button opens configured bot URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": ".contact-copy [data-telegram-link] opens configured bot URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": ".footer-telegram opens configured bot URL",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No contact form",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reduced motion static",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Five FAQ questions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 1 click toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 1 keyboard restores",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 2 click toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 2 keyboard restores",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 3 click toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 3 keyboard restores",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 4 click toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 4 keyboard restores",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 5 click toggles",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "FAQ 5 keyboard restores",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All FAQ open mobile reflow",
+      "passed": true,
+      "details": {
+        "v": 390,
+        "w": 390
+      }
+    },
+    {
+      "name": "Keyboard first skip link",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Skip focuses main",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hero-a.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "hero-b.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html -> Contact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact -> Услуги",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact -> Проекты",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact -> О студии",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No JS navigation visible",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No JS 320px reflow",
+      "passed": true,
+      "details": {
+        "v": 320,
+        "w": 320
+      }
+    },
+    {
+      "name": "No JS FAQ works",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No JS CTA visible fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Invalid Telegram config preserves fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Finite short geometry animation",
+      "passed": true,
+      "details": {
+        "name": "contact-connect",
+        "duration": "0.45s",
+        "count": "1"
+      }
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "page": "contact.html",
+      "width": 1440,
+      "height": 3123,
+      "path": "previews/contact-desktop.webp"
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "height": 3438,
+      "path": "previews/contact-mobile.webp"
+    }
+  ],
+  "public_url_check": {
+    "url": "https://t.me/novary_studio_bot",
+    "method": "HEAD",
+    "status": 200
+  },
+  "summary": {
+    "passed": 83,
+    "failed": 0,
+    "errors": 0
+  }
+}
