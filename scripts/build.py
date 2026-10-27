@@ -40,6 +40,55 @@ class BuildError(Exception):
     pass
 
 
+def parse_header_rules(text):
+    """Проверить используемое подмножество Pages _headers: пути и один splat.
+
+    Не эмулятор Cloudflare: host/placeholders/detach здесь не используются.
+    Лимиты и формат взяты из документации Pages, а не из HTTP-сервера Python.
+    """
+    rules = []
+    for number, raw in enumerate(text.splitlines(), 1):
+        if len(raw) > 2000:
+            raise BuildError(f"_headers:{number}: line exceeds Cloudflare's 2000-character limit")
+        stripped = raw.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        if raw[0].isspace():
+            if not rules or ":" not in stripped:
+                raise BuildError(f"_headers:{number}: header requires a path block and name: value")
+            name, value = (part.strip() for part in stripped.split(":", 1))
+            if not re.fullmatch(r"[A-Za-z][A-Za-z0-9-]*", name) or not value or any(ord(c) < 32 for c in value):
+                raise BuildError(f"_headers:{number}: invalid header field")
+            name = name.lower()
+            if name in rules[-1][1]:
+                raise BuildError(f"_headers:{number}: duplicate header in one block")
+            rules[-1][1][name] = value
+        else:
+            if not re.fullmatch(r"/[A-Za-z0-9_./*-]*", stripped) or stripped.count("*") > 1:
+                raise BuildError(f"_headers:{number}: unsupported or invalid path pattern")
+            rules.append((stripped, {}))
+    if not rules or len(rules) > 100 or any(not fields for _, fields in rules):
+        raise BuildError("_headers requires 1–100 nonempty path blocks")
+    return rules
+
+
+def headers_for_path(rules, path):
+    """Расчёт только наших path/splat-правил; повторы соединяются как в Pages."""
+    result = {}
+    for pattern, fields in rules:
+        if re.fullmatch(re.escape(pattern).replace(r"\*", ".*"), path):
+            for name, value in fields.items():
+                result[name] = result[name] + ", " + value if name in result else value
+    return result
+
+
+def read_header_rules(path):
+    if not path.is_file() or path.is_symlink():
+        raise BuildError("Missing or symlink _headers configuration")
+    scan_public_file(path)
+    return parse_header_rules(path.read_text(encoding="utf-8"))
+
+
 class Page(HTMLParser):
     VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
@@ -211,6 +260,7 @@ def render_seo(text, name, site_url):
 
 def validate_site(root, site_url=None, expected=None):
     failures, pages, titles, descriptions = [], {}, [], []
+    read_header_rules(root/"_headers")
     for name in PAGES:
         path = root/name
         if not path.is_file():
@@ -308,6 +358,7 @@ def build(root=ROOT, site_url=None):
     if dist.is_symlink() or (dist.exists() and not dist.is_dir()):
         raise BuildError("Refusing to clean a symlink or non-directory dist")
     files = collect_files(root)
+    read_header_rules(root/"_headers")
     if dist.exists():
         shutil.rmtree(dist)
     dist.mkdir()
@@ -330,7 +381,8 @@ def build(root=ROOT, site_url=None):
             ET.indent(sitemap)
             ET.ElementTree(sitemap).write(dist/"sitemap.xml", encoding="utf-8", xml_declaration=True)
         (dist/"robots.txt").write_text(robots, encoding="utf-8")
-        expected = files | {"robots.txt"} | ({"sitemap.xml"} if site_url else set())
+        shutil.copyfile(root/"_headers", dist/"_headers")
+        expected = files | {"robots.txt", "_headers"} | ({"sitemap.xml"} if site_url else set())
         return validate_site(dist, site_url, expected)
     except Exception:
         shutil.rmtree(dist)
@@ -344,7 +396,7 @@ def main():
     args = parser.parse_args()
     try:
         site_url = normalize_site_url(args.site_url)
-        expected = collect_files(ROOT) | {"robots.txt"} | ({"sitemap.xml"} if site_url else set())
+        expected = collect_files(ROOT) | {"robots.txt", "_headers"} | ({"sitemap.xml"} if site_url else set())
         result = validate_site(ROOT/"dist", site_url, expected) if args.check else build(ROOT, site_url)
         print(f"PASS: {result['pages']} pages, {result['files']} public files, {result['bytes']} bytes")
         if not site_url:

@@ -1,9 +1,166 @@
 # NOVARY — production-аудит и launch checklist
 
-27 октября 2026 года. Проверены семь публичных страниц и отдельная `dist/`.
-Сайт не опубликован, домен не подключён, Git-коммиты не создавались.
-Домен пока не определён пользователем. Артефакт готов к локальной проверке;
-домен и настройки выбранного хостинга остаются обязательными шагами запуска.
+Первоначальный аудит 27 октября 2026 года выполнялся до первой публикации.
+Его результаты и цифры ниже сохранены как история, а не как текущее состояние хостинга.
+
+## Cloudflare Pages — обновление HTTP-заголовков
+
+Сайт уже опубликован по предоставленному адресу **https://novary.pages.dev**.
+В этом проходе подготовлена конфигурация для следующей сборки. Публикация,
+изменение Cloudflare Dashboard и Git-коммиты не выполнялись.
+
+### Источник и сборка
+
+Исходный файл — [`_headers`](../_headers). `scripts/build.py` проверяет его,
+копирует без изменений в `dist/_headers` и учитывает в точном списке допустимых
+файлов. Редактировать `dist/` вручную не требуется.
+
+```bash
+export NOVARY_SITE_URL=https://novary.pages.dev
+python3 scripts/build.py --site-url "$NOVARY_SITE_URL"
+python3 scripts/build.py --check --site-url "$NOVARY_SITE_URL"
+python3 scripts/test_build.py
+```
+
+HTML, CSS, JS, Telegram-конфигурация и исходные SEO-файлы не изменены.
+Логика генерации canonical/Open Graph/sitemap остаётся прежней. Сборка с указанным
+URL содержит 45 файлов: прежние ресурсы, robots, sitemap и новый `_headers`.
+Без `--site-url` по-прежнему работает предусмотренный режим без доменных метаданных.
+
+### Заголовки безопасности
+
+Глобальное правило `/*` задаёт:
+
+```text
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; style-src-attr 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+```
+
+- CSS, ES-модули, изображения и шрифты загружаются с того же origin.
+- Inline JavaScript и `unsafe-eval` не разрешены. В коде нет inline-обработчиков.
+- Шесть `style="--sample: …"` в палитрах кейсов требуют inline CSS-атрибутов.
+  В CSP3 они разрешены через `style-src-attr`; `style-src-elem 'self'` ограничивает
+  элементы стилей. `style-src 'self' 'unsafe-inline'` сохраняет CSS-совместимость
+  браузеров без раздельных директив, где политика CSS будет менее строгой.
+- Telegram и демосайты — обычная навигация в новой вкладке. Добавлять их в
+  `connect-src` или разрешать внешние скрипты для этого не нужно.
+- Диалоги меню и нативный FAQ не требуют eval, внешнего API или новых разрешений.
+- Камера, микрофон и геолокация не используются и запрещены Permissions-Policy.
+- Встраивание NOVARY в чужой iframe блокируется; форм на сайте нет.
+
+### Кэширование — подготовленные правила
+
+| Пути | Cache-Control |
+| --- | --- |
+| `/`, `/index`, `/*.html`, `/services`, `/projects`, `/about`, `/contact`, оба extensionless-кейса | `public, max-age=0, must-revalidate` |
+| `/assets/css/*`, `/assets/js/*` | `public, max-age=0, must-revalidate` |
+| `/assets/images/*`, `/assets/favicon.svg` | `public, max-age=3600, must-revalidate` |
+| `/assets/fonts/*` | `public, max-age=86400, must-revalidate` |
+| `/robots.txt`, `/sitemap.xml` | `public, max-age=0, must-revalidate` |
+
+Cloudflare перенаправляет HTML на адреса без расширения, поэтому учтены обе формы
+публичных URL. Редиректы обрабатываются раньше `_headers`; проверять надо финальный
+ответ. У глобального правила нет Cache-Control: наборы путей для кэша не пересекаются.
+Это важно, потому что повторные заголовки из нескольких правил Pages объединяет
+через запятую, а не заменяет последним правилом.
+
+Нигде нет `immutable`. HTML/CSS/JS могут храниться, но требуют проверки свежести;
+это не `no-store`. Изображение может оставаться свежим в браузере до часа,
+шрифт — до суток, даже после следующего deploy с тем же именем файла.
+`must-revalidate` не отменяет этот период свежести.
+Существующие правила CDN и Cache Rules не менялись. Описанные TTL — намерение
+конфигурации HTTP-ответов, а не подтверждение работы нового кэша на production.
+
+### Что проверено
+
+- [x] 20 unittest-тестов сборки, включая прежние 14 сценариев.
+- [x] Точная копия `_headers` в dist, обычная и доменная сборки, воспроизводимость.
+- [x] Поддерживаемый формат path/splat, отступы, имена полей, лимиты 100 правил /
+  2000 символов на строку, отсутствие повторов в блоке, отказ при ошибках.
+- [x] URL HTML с расширением и без него, вложенные кейсы, CSS/JS, изображения,
+  шрифты, favicon и SEO-файлы; у каждого ожидаемого пути ровно один Cache-Control.
+- [x] Заголовки сканируются тем же защитным механизмом, что и остальные публичные
+  файлы; отсутствие, symlink и синтетический секрет останавливают сборку без вывода значения.
+- [x] Все шесть существующих статических проверок сайта прошли.
+- [x] Локальный Chromium с эквивалентными HTTP-заголовками: семь страниц, CSS/JS,
+  изображения, шрифты, шесть цветов палитры, меню, FAQ, Telegram и внешние переходы.
+  126 проверок прошли, 0 ошибок консоли, 0 нарушений CSP.
+  Permissions-Policy запрещает три неиспользуемые возможности.
+
+Повторить локальную проверку:
+
+```bash
+python3 scripts/check_headers_browser.py
+```
+
+Dev-скрипт использует уже доступный Playwright и временный сервер на loopback.
+Он **специально добавляет** заголовки ответа. Обычный `python -m http.server`
+не интерпретирует `_headers`. Это проверка того, что браузер применяет эквивалентную
+CSP и сайт сохраняет функции, а не эмуляция Cloudflare CDN, ETag или его кэша.
+Парсер в build.py проверяет только используемое проектом подмножество path/splat,
+а не весь язык `_headers` и не заменяет проверку деплоя на платформе.
+[Браузерный отчёт](cloudflare-headers-browser.json).
+
+### Прочитанные production-ответы до следующего deploy
+
+На 27 октября 2026 года повторные HEAD-запросы с обычным User-Agent к `/`,
+`/contact`, CSS, JS, изображению и шрифту вернули 200. На этих ответах:
+
+- `X-Content-Type-Options: nosniff` и `Referrer-Policy: strict-origin-when-cross-origin` уже есть;
+- Cache-Control — `public, max-age=0, must-revalidate`, в том числе у изображения и шрифта;
+- CSP и Permissions-Policy отсутствуют; у проверенных ресурсов есть ETag.
+
+GET главной вернул 200: в опубликованном HTML только локальный `assets/js/main.js`,
+inline-скриптов и сторонних runtime-ресурсов не обнаружено.
+
+Это наблюдение существующего деплоя, **не подтверждение новой конфигурации**.
+Первый автоматический запрос получил 403; повторные проверки прошли.
+[Фактические ответы](cloudflare-live-headers.json).
+
+### Проверка после публикации пользователем
+
+Проверять финальные ответы, включая Cloudflare-редиректы:
+
+```bash
+curl -sSIL https://novary.pages.dev/
+curl -sSIL https://novary.pages.dev/services.html
+curl -sSIL https://novary.pages.dev/projects/barber-cult.html
+curl -sSI https://novary.pages.dev/assets/css/styles.css
+curl -sSI https://novary.pages.dev/assets/js/main.js
+curl -sSI https://novary.pages.dev/assets/images/social-preview.png
+curl -sSI https://novary.pages.dev/assets/fonts/inter-variable.woff
+```
+
+- [ ] В финальном HTML-ответе есть все четыре заголовка безопасности и ожидаемая CSP.
+- [ ] HTML/CSS/JS имеют max-age=0, изображение — 3600, шрифт — 86400; нет конфликтующих
+  max-age, неожиданных no-store или долгого immutable. Проверить также favicon, robots и sitemap.
+- [ ] При наличии ETag повторить запрос с `If-None-Match: <полученный ETag>` и проверить
+  ответ 304/повторную валидацию. Age/CF-Cache-Status полезны, если сервер их отдаёт,
+  но сами по себе не подтверждают браузерный TTL.
+- [ ] В DevTools Console нет CSP-ошибок; menu, FAQ, палитры, картинки, шрифты и CTA работают.
+- [ ] Проверить обычную повторную загрузку с кэшем и обновление после deploy;
+  тест с отключённым кэшем один не доказывает реальное кэширование.
+
+### Оставшиеся ограничения и риски
+
+Новая конфигурация ещё не опубликована этим проходом. Cloudflare Cache Rules,
+Transform Rules, Workers/Functions или другие политики могут влиять на финальный
+ответ. `_headers` применяется к статическим ответам Pages, не к Pages Functions.
+Правила записаны для текущего размещения в корне; перенос в подпапку требует ревизии путей.
+Новые fetch/аналитика/CDN/формы/iframe потребуют осознанной ревизии CSP.
+Поддержка отдельных CSP/Permissions-Policy директив зависит от браузера.
+
+Основания: [Cloudflare — _headers](https://developers.cloudflare.com/pages/configuration/headers/),
+[Cloudflare — serving/caching](https://developers.cloudflare.com/pages/configuration/serving-pages/),
+[W3C CSP3](https://www.w3.org/TR/CSP3/).
+
+## Исторический аудит перед первой публикацией
+
+Далее сохранены результаты первоначального прохода: тогда домен не был определён,
+сборка содержала 43 файла, а набор тестов сборки — 14 сценариев. Текущие данные
+Cloudflare и обновлённые проверки приведены выше.
 
 ## Найденные проблемы и исправления
 

@@ -1,0 +1,42 @@
+# Cloudflare Pages: static responses only. No global Cache-Control to avoid merging TTLs.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; style-src-attr 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# HTML files and Cloudflare's extensionless document routes must revalidate.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/index
+  Cache-Control: public, max-age=0, must-revalidate
+/services
+  Cache-Control: public, max-age=0, must-revalidate
+/projects
+  Cache-Control: public, max-age=0, must-revalidate
+/about
+  Cache-Control: public, max-age=0, must-revalidate
+/contact
+  Cache-Control: public, max-age=0, must-revalidate
+/projects/barber-cult
+  Cache-Control: public, max-age=0, must-revalidate
+/projects/forma-architects
+  Cache-Control: public, max-age=0, must-revalidate
+
+# These filenames have no content hashes: do not use long-lived immutable caching.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/images/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/assets/fonts/*
+  Cache-Control: public, max-age=86400, must-revalidate
+/assets/favicon.svg
+  Cache-Control: public, max-age=3600, must-revalidate
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate

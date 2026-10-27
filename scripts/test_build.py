@@ -5,7 +5,8 @@ import shutil
 import tempfile
 import unittest
 
-from build import ROOT, PAGES, FONT_LICENSES, BuildError, build, collect_files, normalize_site_url, validate_site
+from build import (ROOT, PAGES, FONT_LICENSES, BuildError, build, collect_files,
+                   normalize_site_url, validate_site, parse_header_rules, headers_for_path)
 
 
 class ProductionBuildTests(unittest.TestCase):
@@ -18,6 +19,7 @@ class ProductionBuildTests(unittest.TestCase):
             shutil.copyfile(ROOT/name, target)
         shutil.copytree(ROOT/"assets", self.root/"assets")
         shutil.copyfile(ROOT/"robots.txt", self.root/"robots.txt")
+        shutil.copyfile(ROOT/"_headers", self.root/"_headers")
 
     def tearDown(self):
         self.temporary.cleanup()
@@ -107,7 +109,7 @@ class ProductionBuildTests(unittest.TestCase):
         build(self.root)
         (self.root/"dist/private.txt").write_text("private fixture")
         with self.assertRaises(BuildError):
-            validate_site(self.root/"dist", expected=collect_files(self.root) | {"robots.txt"})
+            validate_site(self.root/"dist", expected=collect_files(self.root) | {"robots.txt", "_headers"})
 
     def test_duplicate_title_fails(self):
         path = self.root/"about.html"
@@ -146,6 +148,76 @@ class ProductionBuildTests(unittest.TestCase):
         path.write_text(path.read_text().replace('inter-variable.woff', 'missing-font.woff'))
         with self.assertRaises(BuildError):
             build(self.root)
+
+    def test_headers_are_copied_exactly_and_reproducibly(self):
+        build(self.root)
+        expected = (self.root/"_headers").read_bytes()
+        self.assertEqual((self.root/"dist/_headers").read_bytes(), expected)
+        build(self.root)
+        self.assertEqual((self.root/"dist/_headers").read_bytes(), expected)
+        build(self.root, "https://site.test/")
+        self.assertEqual((self.root/"dist/_headers").read_bytes(), expected)
+
+    def test_headers_syntax_limits_and_malformed_input(self):
+        rules = parse_header_rules((self.root/"_headers").read_text())
+        self.assertLessEqual(len(rules), 100)
+        for text in ("  X-Test: orphan", "/\n  Missing-Colon", "/\n  X-Test:\n",
+                     "/**\n  X-Test: value", "/\n  X-Test: first\n  x-test: second",
+                     "/\n  X-Test: " + "x" * 2000,
+                     "\n".join(f"/path{i}\n  X-Test: value" for i in range(101))):
+            with self.subTest(text=text[:50]), self.assertRaises(BuildError):
+                parse_header_rules(text)
+
+    def test_document_and_asset_cache_paths_do_not_merge_conflicting_values(self):
+        rules = parse_header_rules((self.root/"_headers").read_text())
+        documents = ["/", "/index"] + ["/"+name for name in PAGES] + ["/"+name.removesuffix(".html") for name in PAGES if name != "index.html"]
+        paths = {path: 0 for path in documents + ["/robots.txt", "/sitemap.xml", "/assets/css/styles.css", "/assets/js/main.js", "/assets/js/config.js"]}
+        paths.update({"/assets/images/social-preview.png": 3600, "/assets/images/projects/barber-cult-about-640.webp": 3600,
+                      "/assets/fonts/inter-variable.woff": 86400, "/assets/favicon.svg": 3600})
+        for path, age in paths.items():
+            with self.subTest(path=path):
+                headers = headers_for_path(rules, path)
+                self.assertEqual(headers["cache-control"], f"public, max-age={age}, must-revalidate")
+                self.assertNotIn("immutable", headers["cache-control"])
+                self.assertEqual(headers["x-content-type-options"], "nosniff")
+                self.assertEqual(headers["referrer-policy"], "strict-origin-when-cross-origin")
+        self.assertNotIn("cache-control", headers_for_path(rules, "/assets/css-file.css"))
+        self.assertNotIn("cache-control", headers_for_path(rules, "/services-extra"))
+
+    def test_csp_matches_real_resources_and_does_not_allow_eval(self):
+        rules = parse_header_rules((self.root/"_headers").read_text())
+        for path in ("/", "/services", "/projects/barber-cult", "/assets/js/main.js"):
+            headers = headers_for_path(rules, path)
+            csp = dict((parts[0], parts[1:]) for piece in headers["content-security-policy"].split(";") if (parts := piece.split()))
+            self.assertEqual(csp["script-src"], ["'self'"])
+            self.assertEqual(csp["script-src-attr"], ["'none'"])
+            self.assertEqual(csp["style-src-elem"], ["'self'"])
+            self.assertEqual(csp["style-src-attr"], ["'unsafe-inline'"])
+            self.assertEqual(csp["img-src"], ["'self'"])
+            self.assertEqual(csp["font-src"], ["'self'"])
+            self.assertEqual(csp["connect-src"], ["'none'"])
+            self.assertNotIn("unsafe-eval", headers["content-security-policy"])
+            self.assertNotIn("https:", headers["content-security-policy"])
+            self.assertEqual(headers["permissions-policy"], "camera=(), microphone=(), geolocation=()")
+
+    def test_headers_missing_symlink_and_secret_are_rejected(self):
+        path = self.root/"_headers"
+        path.unlink()
+        with self.assertRaises(BuildError):
+            build(self.root)
+        path.symlink_to(ROOT/"_headers")
+        with self.assertRaises(BuildError):
+            build(self.root)
+        path.unlink()
+        token = "123456789:" + "x" * 35
+        path.write_text("/*\n  X-Test: " + token)
+        with self.assertRaises(BuildError) as error:
+            build(self.root)
+        self.assertNotIn(token, str(error.exception))
+
+    def test_multiple_matching_headers_follow_documented_comma_join(self):
+        rules = parse_header_rules("/*\n  X-Test: a\n/assets/*\n  X-Test: b\n")
+        self.assertEqual(headers_for_path(rules, "/assets/main.js")["x-test"], "a, b")
 
 
 if __name__ == "__main__":

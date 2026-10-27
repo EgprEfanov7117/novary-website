@@ -1,0 +1,734 @@
+{
+  "scope": "Local equivalent response headers; not Cloudflare edge/cache verification",
+  "checks": [
+    {
+      "name": "index.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "index.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "index.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "services.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "services.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "projects.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "about.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "about.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ click",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html FAQ keyboard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "contact.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "contact.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "projects/barber-cult.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/barber-cult.html no CSP violations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html receives equivalent CSP",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html styles loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html module and menu initialization",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html images decoded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html local fonts ready",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html inline palette color applies",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html Telegram navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html external project navigation allowed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html unused permissions denied",
+      "passed": true,
+      "details": [
+        {
+          "name": "camera",
+          "allowed": false
+        },
+        {
+          "name": "microphone",
+          "allowed": false
+        },
+        {
+          "name": "geolocation",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "name": "projects/forma-architects.html mobile dialog opens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html mobile menu restores focus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "projects/forma-architects.html no CSP violations",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "console_errors": [],
+  "csp_violations": [],
+  "summary": {
+    "passed": 126,
+    "failed": 0,
+    "console_errors": 0,
+    "csp_violations": 0
+  }
+}

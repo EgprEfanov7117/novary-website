@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-27",
+  "scope": "Read-only production observation before any deployment of this change; not verification of the proposed policy",
+  "responses": [
+    {
+      "url": "https://novary.pages.dev/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://novary.pages.dev/contact",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://novary.pages.dev/assets/css/styles.css",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/css; charset=utf-8",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "ETag": "\"a295306f6208874d4105cbba5a5a1ec2\"",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://novary.pages.dev/assets/js/main.js",
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "ETag": "\"de4a480de0bef513e9c1a850e50082dc\"",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://novary.pages.dev/assets/images/social-preview.png",
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "ETag": "\"ea61da402a21d1a4e4fb71e07f25f313\"",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://novary.pages.dev/assets/fonts/inter-variable.woff",
+      "status": 200,
+      "headers": {
+        "Content-Type": "font/woff",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "ETag": "\"6b4f9a1f2bbe24d04eddea564e8af67d\"",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "cloudflare"
+      }
+    }
+  ],
+  "homepage_runtime_scan": {
+    "status": 200,
+    "scripts": [
+      "assets/js/main.js"
+    ],
+    "inline_script_count": 0,
+    "external_runtime_resources": []
+  }
+}
